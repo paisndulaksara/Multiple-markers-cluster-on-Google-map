@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Simple Markers</title>
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+    #map {
+      height: 100%;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script>
+
+    function initMap() {
+      //var myLatLng = { lat: 6.034801,lng:  80.216830  };
+      var myLatLng = { lat:  6.034846,lng:  80.216691  };// vidyaloka6.035130, 80.216684
+     
+      var mahamodara = { lat: 6.038346, lng: 80.205798 };
+      var dadalla = { lat: 6.048131, lng: 80.187231 };
+      var heenpendala = { lat: 6.047304, lng: 80.200595 };
+      var koggalakade = { lat: 6.044311, lng: 80.213814 };
+      var galwadugoda = { lat: 6.045159, lng: 80.211019 };
+      var richmondhill = { lat: 6.051696, lng: 80.206387 };
+      var kaleganaJunction = { lat: 6.059152, lng: 80.203435 };
+      var eliotroad = { lat: 6.047479, lng: 80.215067 };
+      var julgahajunction = { lat: 6.053145, lng: 80.208054 };
+      var pettigalawatta = { lat: 6.037546, lng: 80.224728 };
+      var walawwatta = { lat: 6.038083, lng: 80.217512 };
+      var waliwatta = { lat: 6.039006, lng: 80.220755 };
+      var dangedra = { lat: 6.049371, lng: 80.219679 };
+      var upperdicksonroad = { lat: 6.038476, lng: 80.219076 };
+      var bandaranayakapedesa = { lat: 6.040393, lng: 80.227675 };
+      var thalapitiya = { lat: 6.043331, lng: 80.227250 };
+      var gangaramaroad = { lat: 6.038017, lng: 80.230648 };
+      var makuluwa = { lat: 6.039903, lng: 80.234043 };
+      // var makuluwapatumaga= { lat:   6.039903,   lng:  80.234043};
+      var sudarmaramaroad = { lat: 6.038307, lng: 80.235870 };
+      var bataduwawest = { lat: 6.051571, lng: 80.240074 };
+      var aththiligoda = { lat: 6.051635, lng: 80.233165 };
+      var dikela = { lat: 6.042163, lng: 80.237644 };
+      var kanampitiyaroad = { lat: 6.045772, lng: 80.226590 };
+      var megalle = { lat: 6.034593, lng: 80.226590 };
+      var dewata = { lat: 6.029663, lng: 80.241802 };
+      var nugaduwa = { lat: 6.037629, lng: 80.248084 };
+      var unawatuna = { lat: 6.020168, lng: 80.247813 };
+
+      //school
+      var mahinda = { lat: 6.049248, lng: 80.215014 };
+      var richmaond = { lat: 6.052559, lng: 80.204773 };
+      var paramananda = { lat: 6.044143, lng: 80.210378 };
+      var olcot = { lat: 6.039935, lng: 80.221480 };
+      var dangedaramaha = { lat: 6.049844, lng: 80.219572 };
+      var aloysius = { lat: 6.036006, lng: 80.211972 };
+      var kannangara = { lat: 6.040904, lng: 80.200271 };
+      var bts = { lat: 6.049234, lng: 80.187713 };
+      var darmapala = { lat: 6.056410, lng: 80.184428 };
+      var piyathissa = { lat: 6.057631, lng: 80.201549 };
+      var ananda = { lat: 6.062414, lng: 80.209254 };
+      var richard = { lat: 6.071906, lng: 80.218918 };
+      var aththiligodasudarshi = { lat: 6.049297, lng: 80.230215 };
+      var siridhamma = { lat: 6.072300, lng: 80.232317 };
+      var thotagoda = { lat: 6.074629, lng: 80.243266 };
+      var rathanajothi = { lat: 6.042333, lng: 80.242986 };
+      var hinidumgoda = { lat: 6.055471, lng: 80.248211 };//vijithananda
+      var megallesudarshi = { lat: 6.033983, lng: 80.237001 };
+      var unawatunamahavidyalaya = { lat: 6.020563, lng: 80.249383 };
+      var bonavista = { lat: 6.025980, lng: 80.243587 };
+      var malharasulhiya = { lat: 6.045069, lng: 80.223831 };//Malharus Sulhiya
+      var uswathun = { lat: 6.032340, lng: 80.242044 };//Uswatun Hasana collage
+
+
+
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        title: 'vidyaloka college',
+        label: 'school',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: mahamodara,
+        title: 'mahamodara',
+        label: 'city',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: dadalla,
+        title: 'dadalla',
+        label: 'c',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: heenpendala,
+        title: 'heenpendala',
+        label: 'd',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: koggalakade,
+        title: 'koggalakade',
+        label: 'e',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: galwadugoda,
+        title: 'galwadugoda',
+        label: 'f',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: richmondhill,
+        title: 'richmondhill',
+
+        label: 'g',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: kaleganaJunction,
+        title: 'kaleganaJunction',
+
+        label: 'h',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: eliotroad,
+        title: 'eliotroad',
+
+        label: 'i',
+        map: map
+      });
+
+
+      var marker = new google.maps.Marker({
+        position: julgahajunction,
+        title: 'julgahajunction',
+
+        label: 'j',
+        map: map
+      });
+
+
+      var marker = new google.maps.Marker({
+        position: pettigalawatta,
+        title: 'pettigalawatta',
+
+        label: 'k',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: walawwatta,
+        title: 'walawwatta',
+
+        label: 'l',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: waliwatta,
+        title: 'weliwatta',
+
+        label: 'm',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: dangedra,
+        title: 'dangedra',
+
+        label: 'n',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: upperdicksonroad,
+        title: 'upperdickson',
+
+        label: 'o',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: bandaranayakapedesa,
+        title: 'bandaranayaka pedesa',
+
+        label: 'p',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: thalapitiya,
+        title: 'thalapitiya',
+
+        label: 'q',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: gangaramaroad,
+        title: 'gangarama road',
+
+        label: 'r',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: makuluwa,
+        title: 'makuluwa ',
+
+        label: 's',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: sudarmaramaroad,
+        title: 'sudarmaramaroad ',
+
+        label: 't',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: bataduwawest,
+        title: 'bataduwa west ',
+
+        label: 'u',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: aththiligoda,
+        title: 'aththiligoda ',
+
+        label: 'v',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: dikela,
+        title: 'dikela ',
+
+        label: 'w',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: kanampitiyaroad,
+        title: 'kanampitiya road ',
+
+        label: 'x',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: megalle,
+        title: 'megalle ',
+
+        label: 'y',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: dewata,
+        title: 'dewata ',
+
+        label: 'z',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: nugaduwa,
+        title: 'nugaduwa ',
+
+        label: 'a1',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: unawatuna,
+        title: 'unawatuna ',
+        label: 'a2',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: mahinda,
+        title: 'mahinda ',
+        label: 'mahinda college',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: richmaond,
+        title: 'richmond college ',
+        label: 'richmond college',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: paramananda,
+        title: 'paramananda maha vidyalaya ',
+        label: 'paramananda maha vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: olcot,
+        title: 'olcot maha vidyalaya ',
+        label: 'olcot maha vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: dangedaramaha,
+        title: 'dangedara maha vidyalaya ',
+        label: 'dangedara maha vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: aloysius,
+        title: 'aloysius college ',
+        label: 'aloysius college',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: kannangara,
+        title: 'kannangara maha vidyalaya ',
+        label: 'kannangara maha vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: bts,
+        title: 'bts vidyalaya',
+        label: 'bts vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: darmapala,
+        title: 'ginthota darmpala vidyalaya',
+        label: 'ginthota darmpala vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: piyathissa,
+        title: 'piyathissa vidyalaya',
+        label: 'piyathissa vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: ananda,
+        title: 'kithulampitiya ananda vidyalaya',
+        label: 'kithulampitiya ananda vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: richard,
+        title: 'richard pathirana vidyalaya',
+        label: 'richard pathirana  vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: aththiligodasudarshi,
+        title: 'aththiligoda sudarshi vidyalaya',
+        label: 'aththiligoda sudarshi  vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: siridhamma,
+        title: 'siridhamma vidyalaya',
+        label: 'siridhamma  vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: thotagoda,
+        title: 'thotagoda kanishta vidyalaya',
+        label: 'thotagoda kanishta   vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: rathanajothi,
+        title: 'sri rathanajothi vidyalaya',
+        label: 'sri rathanajothi  vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: hinidumgoda,
+        title: 'hinidumgoda kanishta vidyalaya',
+        label: 'hinidumgoda kanishta  vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: megallesudarshi,
+        title: 'megalle sudarshi vidyalaya',
+        label: 'megalle sudarshi  vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: unawatunamahavidyalaya,
+        title: 'unawatuna maha vidyalaya',
+        label: 'unawatuna maha  vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: bonavista,
+        title: 'bonavista vidyalaya',
+        label: 'bonavista  vidyalaya',
+        map: map
+      });
+
+      var marker = new google.maps.Marker({
+        position: malharasulhiya,
+        title: 'Malharus Sulhiya vidyalaya',
+        label: 'Malharus Sulhiya  vidyalaya',
+        map: map
+      });
+
+
+      var marker = new google.maps.Marker({
+        position: uswathun,
+        title: 'Uswatun Hasana collage',
+        label: 'Uswatun Hasana collage',
+        map: map
+      });
+
+
+
+
+
+
+
+
+
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  </script>
+</body>
+
+</html>
